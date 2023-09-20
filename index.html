@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Aru's Blog</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy|Raleway|Questrial">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- Home page background -->
+<div class="bg-image">
+	<img src="home1.jpg", alt="This is a bacground of the home page" style="width:100%">
+<!-- Using containers to place navigation bar and titles on the background image -->
+	<div class="container1">   
+		<div class="centered"> Aru's Blog </div>
+		<div class="lowercenter">NYU student - Scientist - Traveler</div>
+<!-- Navigation bar as container 2 with elements in it -->
+	<div class="container2">
+		<div class="navbar">
+	<!-- Left-aligned links (default) -->
+			<a href="#home">Home</a>
+    	    <button class="button" onclick="location.href='#about'">About</button>
+    	    <button class="button" onclick="location.href='#vlog'">Weekly Vlog</button>
+    	    <!-- dropdown button within navigation bar -->
+    	    <div class="dropdown">
+    		    <button class="dropbtn">Blog <i class="fa fa-caret-down"></i></button>
+    		    <div class="inside-dropdown">
+    		<a href="#">NYUAD College Life</a>
+    		<a href="#">Travel blog</a>
+    		<a href="#">Different</a>
+    	        </div>
+    	    </div>
+    <!-- Right-aligned links containing links to social media -->
+    	    <div class="navbar-right">
+    	    	<div class="insta"><a href="https://instagram.com/aru_bolatova?igshid=OGQ5ZDc2ODk2ZA=="><img src="insta.png"></a></div>
+  	            <a href="https://www.linkedin.com/in/aruzhan-bolatova-55496a289"><img src="linkedin.png"></a>
+  	            <a href="https://youtube.com/@aruzhanbolatova9734?si=PQEAMZQ111LVtdyT"><img src="youtube.png"></a>
+    	    </div>
+        </div>
+	</div> 
+</div>
+
+							<!-- Section About -->
+
+<!-- "id = about" was created to be used as a location reference for About button in navigation bar, so it scrolls down to this section-->
+<div id="about">
+<p>About</p>
+	<p class="description">Welcome to my corner of the internet! I'm a spirited Kazakh girl with big dreams, currently navigating life's incredible adventures while pursuing my education at New York University Abu Dhabi. This blog is my canvas, a place where I paint the colorful strokes of my unique path and share my experiences, all while hoping to inspire and connect with like-minded souls around the world.</p>
+</div>
+<!-- this container under section About contains photos with descriptions as an overview of the website. Ideally the text in the middle should lead the user to another page -->
+<div class="container3">
+<div class="about-photo">
+	<img src="malta.jpg" alt="photo" width="360px" height="290px">
+    <div class="desc">Explore the Aesthetics and Realities of Global Adventures. Embark on a journey with me to uncover the beauty and authenticity of travel adventures around the world. This is your passport to inspiration, valuable suggestions, insider tips, and so much more. </div>
+    <div class="middle">
+    	<div class="text">Travel Blog</div>
+    </div>
+</div>
+
+<div class="about-photo">
+	<img src="nyuad.jpg" alt="photo" width="360px" height="290px">
+    <div class="desc">Navigating the Academic and Social Journey at NYU: Insights from an NYU Student. Join me in exploring the invaluable experiences along my science pathway, uncovering the secrets of successful college applications, and mastering the art of thriving in college life.</div>
+    <div class="middle">
+    	<div class="text">NYU College Life</div>
+    </div>
+</div>
+
+<div class="about-photo">
+	<img src="science.jpg" alt="photo" width="360px" height="290px">
+    <div class="desc">Beyond Academics: Discover the Multifaceted World of an NYU Student. I invite you to explore the diverse interests and passions that make up my life as an NYU student. Beyond the textbooks and lectures, here you'll find a delightful blend of beauty tips, sports adventures, and engaging DIY vlogs.</div>
+    <div class="middle">
+    	<div class="text">Different</div>
+    </div>
+</div>
+</div>
+
+<!--Section Weekly Vlog contains video and description to it as well as comments section-->
+
+<!-- "id = vlog" was created to be used as a location reference for Weekly Vlog button in navigation bar, so it scrolls down to this section-->
+<div id="vlog">
+	<p>Vlog of the Week</p>
+	<p class="description"> Vlog of the Week: Exploring the Heart of NYU Abu Dhabi - Campus Tour! <br> Take a quick tour through the vibrant heart of NYU Abu Dhabi campus- my second home. In this week's vlog, I am taking you on a tour following my steps as I move to different parts of campus during the day.</p>
+	<video height="400" controls>
+		<source src="30MFF_Group3_.mp4" type="video/mp4">
+	</video>
+</div>
+
+<!-- comments and like/dislike section -->
+<div class="container4">
+        <div class="head"><h1>COMMENTS</h1></div>
+        <!-- Add a div with an id for the comments list -->
+        <div class="comments" id="comments"></div>
+        <div class="commentbox">
+            <img src="avatar.png" alt="user">
+            <div class="comment_input">
+                <input type="text" id="enter_comment" placeholder="Enter your comment">
+                <button type="submit" id="publish">Publish</button>
+            </div>
+        </div>
+        <div class="like-dislike">
+    		<button id="like-btn"><img src="like.png">Like
+    		</button>
+    		<button id="dislike-btn"><img src="dislike.png">Dislike</button>
+    		<div class="count">
+    			<p id="like-count">0 Likes</p>
+    			<p id="dislike-count">0 Dislikes</p>
+    		</div>	
+    	</div>
+</div>
+
+<!-- linking the html to js -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+/*Home page*/
+
+/*Home page bacground image*/
+.bg-image {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/*Text placed on top of the background image and positioned in the center of the image*/
+.container1 {
+	position: absolute;
+	text-align: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.centered {
+	color: whitesmoke;
+	font-family: Satisfy;
+	font-size: 80pt;
+/*	position:absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -300%); */
+}
+.lowercenter {
+	color: white;
+	font-family: Raleway;
+	font-size: 30pt;
+/*	position: relative;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -600%);*/
+}
+
+/*Navigation bar positioned on top of the page onto background image*/
+.container2 {
+	position: absolute;
+	align-content: space-evenly;
+	top: -180%;
+	left: -280%;
+	margin: 10px;
+	width: 220%;
+}
+
+/*Navbar container*/
+.navbar {
+	overflow: hidden;
+	background-color: #fcfaf8;
+	font-family: Raleway;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	transform: translate(100%, 100%);
+}
+
+/*Navbar content*/
+.navbar a {
+	float: left;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 30px 30px;
+}
+.navbar .button{
+	float: left;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 30px 30px;
+	background-color: inherit;
+	font-family: Raleway;
+	border: none;
+	outline: none;
+}
+
+/*dropdown bar*/
+.dropdown {
+	float: left;
+	overflow: visible;
+	position: relative;
+	display: inline-block;
+	/*top: 0%;
+	left: 0%;
+	transform: translate(0%, 0%);*/
+}
+.dropdown .dropbtn {
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: black;
+	padding: 30px 30px;
+	background-color: inherit;
+	font-family: Raleway;
+}
+
+/*when mouse is over it*/
+.navbar a:hover {
+	background-color: #eff3ed;
+	color: white;
+}
+.navbar .button:hover {
+	background-color: #eff3ed;
+	color: white;
+}
+.dropdown:hover .dropbtn{
+	background-color: #eff3ed;
+	color: white;
+	position: fixed;
+
+}
+
+/*dropdown content and interactions*/
+.inside-dropdown {
+	display: none;
+	position: absolute;
+/*	transform: translate(0%, %);*/
+	background-color: whitesmoke;
+	min-width: 160px;
+	z-index: 1;
+/*	overflow: hidden;*/
+}
+.inside-dropdown a {
+/*	float: none;*/
+	color: black;
+	padding: 12px 20px;
+	display: block;
+	text-align: left;
+/*	overflow: hidden;*/
+}
+.inside-dropdown a:hover {
+	background-color: #eff3ed;
+/*	overflow: visible;*/
+
+}
+.dropdown:hover .inside-dropdown {
+	display: block;
+	overflow: visible;
+	transform: translate(0, 50%);
+}
+
+.navbar-right {
+	float: right;
+	text-align: center;
+	padding: 0px 30px;
+}
+.navbar-right img {
+	height: 40px;
+}
+.insta {
+	float: right;
+	text-align: center;
+}
+.insta img {
+	height: 40px;
+}
+
+/*Section About: positioning of description and photos, interactions with mouse moving, style*/
+#about {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	font-size: 70px;
+	font-family: Questrial;
+	text-align: center;
+}
+
+.description { 
+position: relative;
+background-color:#f6f2f3;
+width: 180%;
+padding: 30px 50px;
+font-size: 20px;
+text-align: center;
+transform: translate(-25%);
+font-family: Raleway;
+margin: 10px;
+ }
+
+/*container with photos of Section About and the interactions*/
+ .container3 {
+ 	position: absolute;
+ 	top: 1100px;
+ }
+
+.about-photo {
+	position: relative;
+	float: left;
+	margin: 5px;
+	border: 1px solid #ccc;
+	width: 30%;
+	left: 20px;
+	margin-left: 15px;
+    margin-right: 15px;
+}
+
+.about-photo:hover {
+	border: 1px solid #777;
+}
+.about-photo img {
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+    float: left;
+	width: 100%;
+	height: auto;
+}
+.about-photo .desc {
+	padding-block: 15px;
+	text-align: center;
+	font-size: 20px;
+	background-color: #f3f6f2;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+.container3:hover img {
+	opacity: 0.3;
+}
+.container3:hover .middle {
+	opacity: 1;
+}
+.text {
+	background-color: #eff3ed;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+/*Section Weekly Vlogs: positioning, style and interactions with mouse*/
+#vlog {
+	position: absolute;
+	top: 1700px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 70px;
+	font-family: Questrial;
+	text-align: center;
+}
+
+video {
+	transform: translate(-70%);
+	width: 60%;
+	height: auto;
+	margin: 50px;
+}
+
+/*Comments section: postion, style*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container4 {
+	position: absolute;
+	top: 2100px;
+	left: 800px;
+    min-height: 500px;
+	display: flex;
+	background-color: #ded1cd;
+	padding: 20px;
+	font-family: Raleway;
+	width: 500px;
+/*	box-shadow: 0 0 5px #000;*/
+}
+
+.head {
+	position: relative;
+	top: 10px;
+	left:200px;
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 20px;
+}
+
+#comments {
+	position: relative;
+	left: -40px;
+	top: 50px;
+/*	border: 1px solid blue;*/
+	/*display: block;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	background-color: yellow;*/
+
+}*/
+.commentbox {
+	position: absolute;
+	padding: 50px;
+}
+
+.commentbox img {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top:385px;
+	left: 25px;
+}
+
+.comment_input {
+	position: absolute;
+	top:400px;
+	left: 80px;
+}
+.comment_input input {
+	border: none;
+	padding: 10px;
+	padding-left: 0;
+	outline: none;
+	border-bottom: 2px solid blue;
+	margin-bottom: 10px;
+	width: 400px;
+}
+
+#publish {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	background-color: #e8dfdc;
+	padding: 10px 20px;
+}
+
+#publish:hover {
+	background-color: #987fb6;
+	color: white;
+}
+
+/*Like and Dislike buttons and counter*/
+.like-dislike {
+	position: absolute;
+	top: 445px;
+	left: 195px;
+}
+#like-btn {
+	padding-left: 10px;
+	padding-right: 30px;
+	font-size: 15pt;
+	text-align: center;
+	border: none;
+	outline: none;
+	background-color: #e8dfdc;
+	margin-right: 5px;
+
+}
+#like-btn img {
+	width: 40px;
+}
+#like-btn:hover {
+	background-color: #987fb6;
+	color: white;
+}
+#dislike-btn {
+	padding: 0px 10px;
+	font-size: 15pt;
+	text-align: center;
+	border: none;
+	outline: none;
+	background-color: #e8dfdc;
+}
+#dislike-btn img {
+	width: 40px;
+}
+
+#dislike-btn:hover {
+	background-color: #987fb6;
+	color: white;
+}
+
+.count {
+	position: relative;
+	right: 100px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+#like-count {
+	font-size: 15pt;
+	font-family: inherit;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+#dislike-count {
+	font-size: 15pt;
+	font-family: inherit;
+	margin-top: 5px;
+	display: inline-block;
+}
