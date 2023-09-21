@@ -36,12 +36,8 @@ Reflecting on the project's completion, I feel a sense of accomplishment. Since 
 Throughout this project, I encountered challenges related to design choices, technical issues, and content creation. The biggest challenge was learning HTML, CSS JavaScripts tools in a short period of time while already creating the web page. However, these challenges also provided valuable learning opportunities and lots of practice. I gained basic skills in HTML/CSS and gained insights into content creation and web hosting.
 
 **Future Plans:**  
-In the future, I plan to continue expanding my knowledge in wev development and improving the blog. The project has many flaws which should be addressed, such as optimizing the page for mobile or  I'll seek feedback from readers to enhance the user experience and provide even more valuable content. 
+In the future, I plan to continue expanding my knowledge in wev development and improving the blog. The project has many flaws which should be addressed, such as optimizing the page for mobile or shrinked page modes. The Java Script interaction are not well designed and developed. I'll seek feedback from readers to enhance the user experience and provide even more valuable content. 
 
-Feel free to explore the blog: [Link to Your Blog]
+Feel free to explore the blog: 
 
 Thank you for visiting and for your interest in my personal journey!
-
----
-
-Customize this README with specific details about your project, including the project name, theme, and experiences you want to highlight. It will serve as an informative introduction to your blog for visitors to your GitHub repository.
